@@ -10,9 +10,8 @@
 #import <FBSDKCoreKit/FBSDKCoreKit.h>
 #import <FBSDKLoginKit/FBSDKLoginKit.h>
 #import "SelectVideoViewController.h"
-#import "UserInfo.h"
-#import "UserIdentifier.h"
 
+#import <DabkickSDK/DabkickSDK.h>
 
 
 @interface ViewController ()
@@ -63,6 +62,9 @@
                      user.uniqueID = fbID;
                      user.userName = fbName;
                      user.userProfilePic = imageURL;
+                     user.userJID = @"ac81a1ed13";
+                     
+                     [Dabkick Register:user];
                      
                      if(success)
                      {
@@ -74,6 +76,7 @@
                                  UserInfo *userInfo = [[UserInfo alloc]init];
                                  userInfo.name = [obj objectForKey:@"name"];
                                  userInfo.uniqueID = [obj objectForKey:@"id"];
+                                 userInfo.test = @"adf";
                                  
                                  //get friend's profile pic
                                  [self getProfilePic:userInfo.uniqueID withCallback:^(bool success, NSString *imageURL) {
