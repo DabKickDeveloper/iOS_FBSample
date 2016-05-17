@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "6CF37F0C8EDBEDA2B4E3F9BD56F970D7B66485BE",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "6CF37F0C8EDBEDA2B4E3F9BD56F970D7B66485BE" : 0,
+    "B775552D1BBEEADC6A0BBB2FD048B6AA26CB309D" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "5A0F2018-9232-4374-A2AE-65C2F5D448B7",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "6CF37F0C8EDBEDA2B4E3F9BD56F970D7B66485BE" : "SDKSample\/",
+    "B775552D1BBEEADC6A0BBB2FD048B6AA26CB309D" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "SDKSample",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "SDKSample.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/DabKickDeveloper\/iOS_FBSample.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "6CF37F0C8EDBEDA2B4E3F9BD56F970D7B66485BE"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/robbiehanson\/XMPPFramework.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "B775552D1BBEEADC6A0BBB2FD048B6AA26CB309D"
+    }
+  ]
+}

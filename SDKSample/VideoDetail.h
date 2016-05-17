@@ -13,5 +13,6 @@
 @property(nonatomic) NSString *videoID;
 @property(nonatomic) NSString *imageURL;
 @property(nonatomic) NSString *title;
+@property(nonatomic) NSString *streamURL;
 
 @end

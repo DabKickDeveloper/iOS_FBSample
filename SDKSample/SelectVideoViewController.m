@@ -9,6 +9,7 @@
 #import "SelectVideoViewController.h"
 #import "ViewController.h"
 #import "VideoDetail.h"
+#import "VideoPlayerController.h"
 #import <SDWebImage/UIImageView+WebCache.h>
 #import <AFNetworking/AFURLRequestSerialization.h>
 #import <AFNetworking/AFHTTPSessionManager.h>
@@ -94,7 +95,7 @@
     
     AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
     [manager GET:youtubeURL parameters:param progress:nil success:^(NSURLSessionTask *task, id responseObject) {
-        NSLog(@"JSON: %@", responseObject);
+        //NSLog(@"JSON: %@", responseObject);
         
         [youtubeVideos removeAllObjects];
         NSArray *videos = [responseObject objectForKey:@"items"];
@@ -142,6 +143,18 @@
 - (NSInteger)easyTableView:(EasyTableView *)easyTableView numberOfRowsInSection:(NSInteger)section
 {
     return [youtubeVideos count];
+}
+
+-(void)easyTableView:(EasyTableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    NSLog(@"click video index %ld",(long)indexPath.row);
+    VideoDetail *detail = [youtubeVideos objectAtIndex:indexPath.row];
+    
+    VideoPlayerController *controller = [[VideoPlayerController alloc]init];
+    controller.currentVideo = detail;
+    controller.friendList = _friendList;
+    [self presentViewController:controller animated:true completion:nil];
+    
 }
 
 - (UITableViewCell *)easyTableView:(EasyTableView *)easyTableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
